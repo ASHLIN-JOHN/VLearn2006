@@ -5,13 +5,13 @@ import { getFirestore } from 'firebase/firestore'
 import { getStorage } from 'firebase/storage'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyASQdYasDLzM-cE_TA28DunCt54CMVvbCA",
-  authDomain: "vlearn-ashlin.firebaseapp.com",
-  projectId: "vlearn-ashlin",
-  storageBucket: "vlearn-ashlin.firebasestorage.app",
-  messagingSenderId: "856597342573",
-  appId: "1:856597342573:web:c3dc709f4637d694b3d264",
-  measurementId: "G-WVSWMT0XVX"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
 }
 
 
